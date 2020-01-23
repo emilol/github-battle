@@ -23,7 +23,7 @@ function LanguagesNav({ selected, onUpdateLanguage }) {
 
 LanguagesNav.propTypes = {
   selected: PropTypes.string.isRequired,
-  onUpdateLanguage: PropTypes.func,
+  onUpdateLanguage: PropTypes.func.isRequired,
 }
 
 export default LanguagesNav;
