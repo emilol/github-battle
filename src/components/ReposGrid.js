@@ -4,7 +4,7 @@ import { FaUser, FaStar, FaCodeBranch, FaExclamationTriangle } from 'react-icons
 import Card from './Card'
 import Tooltip from './Tooltip'
 
-function ReposGrid({repos}) {
+export default function ReposGrid({repos}) {
   return (
     <ul className='grid space-around'>
       {repos.map((repo, index) => {
@@ -51,5 +51,3 @@ function ReposGrid({repos}) {
 ReposGrid.propTypes = {
   repos: PropTypes.array.isRequired,
 }
-
-export default ReposGrid

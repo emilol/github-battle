@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { FaTimesCircle } from 'react-icons/fa'
 import { ThemeConsumer } from '../contexts/theme'
 
-function PlayerPreview({username, onReset, label}) {
+export default function PlayerPreview({username, onReset, label}) {
   return (
     <ThemeConsumer>
       {({theme}) => (
@@ -38,5 +38,3 @@ PlayerPreview.propTypes = {
   onReset: PropTypes.func.isRequired,
   label: PropTypes.string.isRequired,
 }
-
-export default PlayerPreview

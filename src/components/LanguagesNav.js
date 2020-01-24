@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-function LanguagesNav({ selected, onUpdateLanguage }) {
+export default function LanguagesNav({ selected, onUpdateLanguage }) {
   const languages = [ 'All', 'JavaScript', 'Ruby', 'Java', 'CSS', 'Python']
 
   return <ul className='flex-center'>
@@ -25,5 +25,3 @@ LanguagesNav.propTypes = {
   selected: PropTypes.string.isRequired,
   onUpdateLanguage: PropTypes.func.isRequired,
 }
-
-export default LanguagesNav;

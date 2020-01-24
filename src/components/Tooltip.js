@@ -24,7 +24,7 @@ const styles = {
   }
 }
 
-export default function Tooltip({ text, children, hovering}) {
+export default function Tooltip({ text, children}) {
   return (
     <Hover>
       {(hovering) => {
@@ -41,5 +41,4 @@ export default function Tooltip({ text, children, hovering}) {
 
 Tooltip.propTypes = {
   text: PropTypes.string.isRequired,
-  hovering: PropTypes.bool.isRequired,
 }

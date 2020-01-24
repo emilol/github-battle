@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { ThemeConsumer } from '../contexts/theme'
 
-function Card({header, subheader, avatar, href, name, children}) {
+export default function Card({header, subheader, avatar, href, name, children}) {
   return (
     <ThemeConsumer>
       {({theme}) => (
@@ -37,5 +37,3 @@ Card.propTypes = {
   href: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
 }
-
-export default Card
